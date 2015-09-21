@@ -1,0 +1,25 @@
+﻿<img src="img/prices.jpg" height=180>
+<h1>CENNIK</h1>
+<h2>Nie przegap okazji!</h2>
+<p class="Text">Od początku istnienia Pralni dbamy o konkurencyjność naszych
+usług i wychodzimy na przeciw Państwa oczekiwaniom. 
+Zapraszamy do zapoznania się ze szczegółową ofertą. 
+</p>
+
+<% prices_path = File.join(File.dirname(__FILE__), 'prices.csv') %>
+<div id="price_list">
+	<table class="PriceList">
+		<tr><th class="Item">Element garderoby</th><th class="Price">Cena* (PLN)</th></tr>
+	<% 
+		prices = File.readlines(prices_path)
+		i = 0
+		while prices[i] && prices[i+1]
+			%><tr><td class="Item"><%=prices[i]%></td><td class="Price"><%= prices[i+1] %></td></tr><%
+			i += 2
+		end
+	%>
+	</table>
+</div>
+<p style="font-size: 9pt"><b>*</b> Podane ceny są cenami brutto, czyli zawierają podatek VAT i są podane w&nbsp;walucie polskiej (PLN).
+Wszelkie informacje podane w&nbsp;cenniku nie stanowią oferty w rozumieniu Kodeksu cywilnego. 
+Zastrzegamy sobie prawo zmian cen bez wcześniejszego informowania klienta. </p>

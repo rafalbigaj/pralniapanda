@@ -1,0 +1,27 @@
+﻿<img src="img/service.jpg" height=180>
+<h1>OFERTA</h1>
+<h2>Jesteśmy blisko Ciebie!</h2>
+
+<p class="Text">Świadczymy usługi czyszczenia chemicznego, prania wodnego, prasowania
+oraz maglowania z wykorzystaniem najnowszych technologii i środków czyszczących
+przyjaznych dla środowiska. Wykwalifikowany personel zapewni Państwu sprawną obsługę.
+</p>
+<p>Zapraszamy do naszych punktów przyjęć w różnych częściach Krakowa:</p>
+<table class="Maps"><tr>
+<% 
+[ ['lea', 'ul. Lea 18'],
+	['slaska', 'ul. Śląska 8'],
+	['solskiego', 'ul. Solskiego 1'],
+	['stoki', 'os. Na Stoku 2'],
+	['szlak', 'ul. Szlak 14'],
+	['bohaterow', 'os. Bohaterów Września 26'] ].each do |mid, address| %>
+<td>
+<p class="Address"><%= address %></p>
+<img src="img/maps/<%= mid %>_small.gif" onclick="show_map('#<%= mid %>_map');" class="SmallMap">
+<div id="<%= mid %>_map" class="BigMap" style="display: none;"> 
+	<img src="img/maps/<%= mid %>.gif" onclick="hide_map('#<%= mid %>_map')">
+</div>
+</td>
+<% if mid == 'solskiego' %></tr><tr><% end %>
+<% end %>
+</tr></table>

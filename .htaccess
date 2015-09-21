@@ -1,0 +1,7 @@
+# General Apache options
+AddHandler fcgid-script .fcgi
+AddHandler cgi-script .rb
+AddHandler cgi-script .cgi
+Options +FollowSymLinks +ExecCGI
+
+ErrorDocument 500 /500.html

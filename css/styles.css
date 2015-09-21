@@ -1,0 +1,302 @@
+
+body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: Arial,Verdana,sans-serif;
+	font-size: 10pt;
+	background-color: #e0e6ef;
+}
+
+a {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#page {
+	width: 780px;
+	border: 1px solid #26465d;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+#header {
+	width: 780px;
+	height: 280px;
+	background-image: url(../img/head_bg.gif);
+}
+
+#header_content {
+	width: 470px;
+	height: 280px;
+	float: left;
+	display: block;
+	background-image: url(../img/head_title.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+#header_content img {
+	float: right;
+	height: 180px;
+	margin-right: 0px;
+	border: 0;
+}
+
+#logo {
+	width: 310px;
+	height: 280px;
+	background-image: url(../img/head_logo.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	float: left;
+	display: block;
+}
+
+#bar {
+	height: 100px;
+	background-color: #305474;
+	border-bottom: 1px solid white;
+}
+
+#company_name {
+	width: 300px;
+	height: 100px;
+	background-image: url(../img/comp_name.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#page {
+	background-color: #26465d;
+}
+
+#footer {
+	text-align: center;
+	padding: 0px;
+}
+
+#footer p {
+	font-size: 9pt;
+}
+
+#footer a {
+	color: black;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #305474;
+}
+
+#page {
+		color: white;
+}
+
+#page table.Boxes {
+	margin: 10px;
+}
+
+#page table.Boxes td {
+	padding: 20px;
+}
+
+#page table.Boxes img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 6px;
+	border: 0;
+}
+
+#page p {
+	font-size: 9pt;
+	color: white;
+}
+
+#page h1, #page h2 {
+	color: white;
+}
+
+#page #content p.Title, #page #content h1 {
+	font-size: 12pt;
+	line-height: 1pt;
+	font-weight: bold;
+	margin-top: 26px;
+}
+
+#page a {
+	text-decoration: none;
+	color: white;
+}
+
+#page #content p.Highlighted, #page #content h2 {
+	font-size: 10pt;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#page #content.SubPage p.Title, #page #content.SubPage h1 {
+	font-size: 22pt;
+	text-align: right;
+	padding-right: 60px;
+}
+
+#page #content.SubPage p.Highlighted, #page #content.SubPage h2 {
+	font-size: 14pt;
+	text-align: right;
+	padding-right: 60px;
+}
+
+#page #content p {
+	font-size: 10pt;
+}
+
+#page #content.SubPage p {
+	font-size: 12pt;
+}
+
+#content.Subpage {
+	padding: 20px;
+}
+
+#content.Subpage img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	border: 0;
+}
+
+#content.Subpage p.Text {
+	clear: both;
+}
+
+#price_list {
+	text-align: center;
+}
+
+table.PriceList {
+	width: 70%;
+	border: 0px;
+	color: white;
+	margin: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #305474;
+	padding: 30px;
+}
+
+table.PriceList td {
+	padding: 4px;
+	width: 50%;
+}
+
+table.PriceList th {
+	padding: 4px;
+}
+
+table.PriceList td.Item, 
+table.PriceList th.Item {
+	text-align: right;
+	padding-right: 20px;
+}
+
+table.PriceList td.Price,
+table.PriceList th.Price {
+	text-align: left;
+	padding-left: 20px;
+}
+
+ul {
+	font-size: 11pt;
+}
+
+form {
+	width: 100%;
+	text-align: right;
+}
+
+table.Maps {
+	width: 100%;
+}
+
+table.Maps img.SmallMap {
+	cursor: pointer; 
+	cursor: hand;
+	width: 200px;
+	height: 170px;
+}
+
+table.Maps div.BigMap {
+	position: absolute;
+	cursor: pointer; 
+	cursor: hand;
+	width: 660px;
+	height: 510px;
+	background-color: #eaecef;
+}
+
+table.Maps div.BigMap img {
+	position: relative;
+	top: 5px;
+	left: 5px;
+	width: 650px;
+	height: 500px;
+}
+
+table.Maps div.BigMap div.ZumiLink {
+	position: absolute;
+	height: 30px;
+	width: 660px;
+	text-align: right;
+	background-image: url(../img/maps/zumi.gif); 
+	background-position: top right; 
+	background-repeat: no-repeat;
+	background-color: #eaecef;
+}
+
+#page table.Maps div.BigMap div.ZumiLink a {
+	line-height: 30px;
+	padding-right: 90px; 
+	font-size: 10pt; 
+	color: #777;
+}
+
+table.Maps p.Address {
+	margin-bottom: 4px;
+}
+
+form.SendMessage table {
+	width: 100%;
+}
+
+form.SendMessage textarea {
+	width: 660px;
+	margin: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+form.SendMessage td.Label {
+	width: 100px;
+	padding-left: 40px;
+	color: white;
+}
+
+form.SendMessage input.Text {
+	width: 520px;
+}
+
+form.SendMessage input {
+	margin: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
